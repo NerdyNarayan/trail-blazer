@@ -10,32 +10,32 @@ const project = resolve(process.cwd(), 'tsconfig.json')
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'turbo'],
-  plugins: ['only-warn'],
-  globals: {
-    React: true,
-    JSX: true,
-  },
-  env: {
-    browser: true,
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project,
-      },
+    extends: ['eslint:recommended', 'prettier', 'turbo'],
+    plugins: ['only-warn'],
+    globals: {
+        React: true,
+        JSX: true,
     },
-  },
-  ignorePatterns: [
-    // Ignore dotfiles
-    '.*.js',
-    'node_modules/',
-    'dist/',
-    'postcss.config.js',
-    'tailwind.config.js',
-  ],
-  overrides: [
-    // Force ESLint to detect .tsx files
-    { files: ['*.js?(x)', '*.ts?(x)'] },
-  ],
+    env: {
+        browser: true,
+    },
+    settings: {
+        'import/resolver': {
+            typescript: {
+                project,
+            },
+        },
+    },
+    ignorePatterns: [
+        // Ignore dotfiles
+        '.*.js',
+        'node_modules/',
+        'dist/',
+        'postcss.config.js',
+        'tailwind.config.js',
+    ],
+    overrides: [
+        // Force ESLint to detect .tsx files
+        { files: ['*.js?(x)', '*.ts?(x)'] },
+    ],
 }

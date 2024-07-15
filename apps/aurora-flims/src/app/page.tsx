@@ -1,15 +1,13 @@
+import { Button } from '@repo/ui/components/ui/button'
 import React from 'react'
-import { Button } from '@repo/components/button'
+
 const page = () => {
-  return (
-    <div className="flex flex-col">
-      This is button from package components/Button
-      <Button className="bg-red-200" appName={''}>
-        Hey
-      </Button>
-      page
-    </div>
-  )
+    return (
+        <div className='flex flex-col'>
+            This is aurora flims
+            <Button>Hey</Button>
+        </div>
+    )
 }
 
 export default page
