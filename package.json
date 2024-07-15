@@ -4,21 +4,22 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "format": "prettier \"{apps,packages}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
-    "format:check": "pnpm format --check",
-    "format:write": "pnpm format --write",
-    "lint": " pnpm format:write && turbo lint ",
+    "lint": "  turbo lint ",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.14.10",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.7",
     "prettier": "^3.2.5",
     "turbo": "^2.0.6",
-    "typescript": "^5.4.5",
-    "husky": "^8.0.0"
+    "typescript": "^5.4.5"
   },
   "lint-staged": {
-    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
     "**/*": "prettier --write --ignore-unknown"
   },
   "packageManager": "pnpm@8.15.6",
