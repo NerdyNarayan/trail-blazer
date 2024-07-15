@@ -25,6 +25,7 @@ module.exports = {
     '.*.js',
     'node_modules/',
     'dist/',
+    'postcss.config.js',
   ],
   overrides: [
     {

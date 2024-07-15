@@ -3,10 +3,7 @@ module.exports = {
   extends: ['@repo/eslint-config/library.js'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: [
-      '<tsconfigRootDir>/tsconfig.lint.json',
-      '<tsconfigRootDir>/tsconfig.json',
-    ],
+    project: true,
     extraFileExtensions: ['.json'],
   },
 }

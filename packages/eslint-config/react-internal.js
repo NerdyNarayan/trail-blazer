@@ -31,6 +31,8 @@ module.exports = {
     '.*.js',
     'node_modules/',
     'dist/',
+    'postcss.config.js',
+    'tailwind.config.js',
   ],
   overrides: [
     // Force ESLint to detect .tsx files
