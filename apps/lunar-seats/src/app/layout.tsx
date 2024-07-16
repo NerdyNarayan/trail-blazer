@@ -1,3 +1,4 @@
+import { FloatingNavbar } from '@repo/ui/components/floating-navbar'
 import '@repo/ui/globals.css'
 import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'

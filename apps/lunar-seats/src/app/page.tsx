@@ -1,4 +1,6 @@
 import { Button } from '@repo/ui/components/ui/button'
+import { Dialog } from '@repo/ui/components/ui/dialog'
+import { FloatingNavbar } from '@repo/ui/navbar'
 import React from 'react'
 
 const page = () => {
